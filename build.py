@@ -1,3 +1,4 @@
+
 # Created by zhouwang on 2018/6/9.
 
 import os
@@ -12,7 +13,7 @@ NEW_SUPERADMIN = False
 
 def tools():
     print('Step1: Install Tools')
-    command = 'yum install -y openldap openldap-devel'
+    command = 'apt-get install -y ldap-utils libldap2-dev'
     print('-->', command)
     status = os.system(command)
     if status != 0:
@@ -82,11 +83,11 @@ def main():
     print('### Loggrove Build ###')
     print('''   
 要求：
-    1: 已安装 Python36、PIP3、MySQL57，并保证 python3、pip3、mysql、yum 命令可用；
+    1: 已安装 Python36、PIP3、MySQL57，并保证 python3、pip3、mysql、apt 命令可用；
     2: 已完成 settings.py > MYSQL_DB host、port、user、password, SSH username、password、port 等配置；
 
 步骤：
-    1: 安装依赖工具（yum）
+    1: 安装依赖工具（apt）
     2: 安装Python包 （pip3）
     3: 创建MySQL db，若存在则不进行创建动作
     4: 创建or更新 MySQL tables 结构
