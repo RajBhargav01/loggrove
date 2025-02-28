@@ -94,12 +94,7 @@ def main():
     5: 创建超级管理员，若存在则不进行创建动作       
     ''')
 
-    while True:
-        put = input('开始(y/n):')
-        if put == 'y':
-            break
-        if put == 'n':
-            exit()
+    
 
     print('\n')
     print('>>> Begin:\n')
