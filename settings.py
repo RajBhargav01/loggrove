@@ -12,9 +12,9 @@ LOGIN_URL = '/login/html/'
 
 
 MYSQL_DB = {
-    'host': 'host',
+    'host': 'localhost',
     'port': 3306,
-    'user': 'user',
+    'user': 'root',
     'password': 'password',
     'db': 'loggrove',    # 请勿改动
     'charset': 'utf8',
